@@ -1,2 +1,7 @@
 # dotfiles
-Configuration files
+Configurations for git, tmux
+
+### setup
+```
+bin/setup
+```
