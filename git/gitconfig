@@ -1,0 +1,30 @@
+[alias]
+  aa = add -A .
+  ci = commit
+  ca = commit --amend
+  can = commit --amend --no-edit
+  co = checkout
+  f = fetch
+  fa = fetch --all
+  cob = checkout -b
+  lp = log --pretty=oneline
+  pf = push --force-with-lease
+  r = rebase
+  ri = rebase -i
+  rc = rebase --continue
+  sb = status -b
+[mergetool "fugitive"]
+  cmd = vim -f -c \"Gdiff\" \"$MERGED\"
+[merge]
+  tool = fugitive
+  ff = only
+[fetch]
+  prune = true
+[push]
+  default = upstream
+[core]
+  editor = /usr/bin/vim
+  excludesfile = ~/.gitignore
+[user]
+  email = artlugovoy@gmail.com
+  name = Arthur Lugovoy
