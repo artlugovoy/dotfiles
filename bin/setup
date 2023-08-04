@@ -8,6 +8,11 @@ read -p "Are you sure? (y/n)" -n 1 -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
+  # git configuration
   cp -f git/gitconfig ~/.gitconfig
   cp -f git/gitignore ~/.gitignore
+
+  # nvim configuration
+  mkdir -p ~/.config/nvim
+  cp -f nvim/init.vim ~/.config/nvim/init.vim
 fi

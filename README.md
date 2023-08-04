@@ -1,5 +1,5 @@
 # dotfiles
-Configurations for git, tmux
+Configurations for git, nvim, tmux
 
 ### setup
 ```
