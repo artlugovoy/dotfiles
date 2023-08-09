@@ -1,0 +1,9 @@
+"setxkbmap ru" 
+  control+shift + 4
+
+"setxkbmap us" 
+  control+shift + 5
+
+"setxkbmap ua" 
+  control+shift + 6
+
