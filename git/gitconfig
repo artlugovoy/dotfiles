@@ -2,18 +2,23 @@
   aa = add -A .
   ci = commit
   ca = commit --amend
+  cin = commit --no-edit
   can = commit --amend --no-edit
   co = checkout
+  d = diff
   f = fetch
   fa = fetch --all
   cob = checkout -b
   lp = log --pretty=oneline
   pf = push --force-with-lease
+  pr = pull --rebase
   r = rebase
   ri = rebase -i
   rc = rebase --continue
   sb = status -b
+	conflicted = !vim +Conflicted
 [mergetool "fugitive"]
+  cmd = vim -f -c \"Gdiffsplit!\" \"$MERGED\"
   cmd = vim -f -c \"Gdiff\" \"$MERGED\"
 [merge]
   tool = fugitive
