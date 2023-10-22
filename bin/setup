@@ -11,4 +11,8 @@ then
   # git configuration
   cp -f git/gitconfig ~/.gitconfig
   cp -f git/gitignore ~/.gitignore
+
+  # alacritty configuration
+  mkdir -p ~/.config/alacritty
+  ln -s alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
 fi
