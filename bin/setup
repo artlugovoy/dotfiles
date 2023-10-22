@@ -15,4 +15,7 @@ then
   # alacritty configuration
   mkdir -p ~/.config/alacritty
   ln -s alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
+
+  #xbindkeysrc
+  ln -s xbindkeys/xbindkeysrc ~/.xbindkeysrc
 fi
